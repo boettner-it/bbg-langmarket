@@ -9,23 +9,23 @@ languages:
   - title: deutsch
     enabled: true
     languageId: 0
-    base: /de/
+    base: /
     baseVariants:
       -
         base: '/de-DE/'
-        condition: 'market == 10'
+        condition: 'market == "10"'
       -
         base: '/de-CH/'
-        condition: 'market == 11'
+        condition: 'market == "11"'
       -
         base: '/de-GB/'
-        condition: 'market == 12'
+        condition: 'market == "12"'
       -
         base: '/de-FR/'
-        condition: 'market == 13'
+        condition: 'market == "13"'
       -
         base: '/de-LU/'
-        condition: 'market == 14'
+        condition: 'market == "14"'
     typo3Language: de
     locale: de_DE.UTF-8
     iso-639-1: de

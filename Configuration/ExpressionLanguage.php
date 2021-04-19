@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'market' => [
+    'site' => [
         \Bbg\BbgLangmarket\EpressionLanguage\MarketConditionProvider::class,
     ]
 ];

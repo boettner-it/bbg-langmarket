@@ -17,27 +17,27 @@ class MarketConditionProvider extends AbstractProvider
 			return;
 		}
 
-		$resolvedMarket = 10;
-		$pathSegments   = explode('/', GeneralUtility::getIndpEnv('PATH_INFO'));
+		$pathSegments = explode('/', GeneralUtility::getIndpEnv('REQUEST_URI'));
 
 		switch ($pathSegments[1]) {
-			case '/de-DE/':
+			case 'de-DE':
+			default:
 				$resolvedMarket = 10;
 				break;
 
-			case '/de-CH/':
+			case 'de-CH':
 				$resolvedMarket = 11;
 				break;
 
-			case '/de-GB/':
+			case 'de-GB':
 				$resolvedMarket = 12;
 				break;
 
-			case '/de-FR/':
+			case 'de-FR':
 				$resolvedMarket = 13;
 				break;
 
-			case '/de-LU/':
+			case 'de-LU':
 				$resolvedMarket = 14;
 				break;
 		}
