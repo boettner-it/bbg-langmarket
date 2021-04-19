@@ -1,0 +1,72 @@
+base: 'https://stage.dev.com/'
+errorHandling:
+  - errorCode: 404
+    errorHandler: Page
+    errorContentSource: 't3://page?uid=287'
+flux_content_types: ''
+flux_page_templates: ''
+languages:
+  - title: deutsch
+    enabled: true
+    languageId: 0
+    base: /de/
+    baseVariants:
+      -
+        base: '/de-DE/'
+        condition: 'market == 10'
+      -
+        base: '/de-CH/'
+        condition: 'market == 11'
+      -
+        base: '/de-GB/'
+        condition: 'market == 12'
+      -
+        base: '/de-FR/'
+        condition: 'market == 13'
+      -
+        base: '/de-LU/'
+        condition: 'market == 14'
+    typo3Language: de
+    locale: de_DE.UTF-8
+    iso-639-1: de
+    navigationTitle: Deutsch
+    hreflang: de-DE
+    direction: ltr
+    flag: de
+    websiteTitle: ''
+  - title: english
+    enabled: true
+    languageId: 1
+    base: /en/
+    typo3Language: default
+    locale: en_GB.UTF-8
+    iso-639-1: en
+    navigationTitle: English
+    hreflang: en-GB
+    direction: ltr
+    fallbackType: fallback
+    fallbacks: '0'
+    flag: en-us-gb
+    websiteTitle: ''
+  - title: français
+    enabled: true
+    languageId: 3
+    base: /fr/
+    typo3Language: fr
+    locale: fr_FR.UTF-8
+    iso-639-1: fr
+    navigationTitle: Français
+    hreflang: fr-FR
+    direction: ltr
+    fallbackType: fallback
+    fallbacks: '0'
+    flag: fr
+    websiteTitle: ''
+rootPageId: 1
+routes: { }
+routeEnhancers:
+  PageTypeSuffix:
+    type: PageType
+    map:
+      sitemap.xml: 1533906435
+websiteTitle: ''
