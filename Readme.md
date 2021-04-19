@@ -11,7 +11,7 @@ It serves as an example for the handling of parameters that have been configured
 ## Installation and Setup
 Install as usual (Composer or Extension Manager upload)
 
-Configuration/Routing/config.yaml holds an example Siet configuration.
+Configuration/Routing/config.yaml holds an example Site configuration.
 
 ## What it does
 The extension resolves the parameters www.mysite.com/en-EN into two URL GET parmeters L (language) and LM (market or country) with en holding the standard TYPO3 L parameters sys_language_uid and EN the market parameter value. It is named LM here for historical reasons in the scope of the project this was set up for. 
