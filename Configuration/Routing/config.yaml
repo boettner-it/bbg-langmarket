@@ -11,20 +11,15 @@ languages:
     languageId: 0
     base: /
     baseVariants:
-      -
-        base: '/de-DE/'
+      - base: '/de-DE/'
         condition: 'market == "10"'
-      -
-        base: '/de-CH/'
+      - base: '/de-CH/'
         condition: 'market == "11"'
-      -
-        base: '/de-GB/'
+      - base: '/de-GB/'
         condition: 'market == "12"'
-      -
-        base: '/de-FR/'
+      - base: '/de-FR/'
         condition: 'market == "13"'
-      -
-        base: '/de-LU/'
+      - base: '/de-LU/'
         condition: 'market == "14"'
     typo3Language: de
     locale: de_DE.UTF-8
@@ -38,6 +33,17 @@ languages:
     enabled: true
     languageId: 1
     base: /en/
+    baseVariants:
+      - base: '/en-DE/'
+        condition: 'market == "20"'
+      - base: '/en-CH/'
+        condition: 'market == "21"'
+      - base: '/en-GB/'
+        condition: 'market == "22"'
+      - base: '/en-FR/'
+        condition: 'market == "23"'
+      - base: '/en-LU/'
+        condition: 'market == "24"'
     typo3Language: default
     locale: en_GB.UTF-8
     iso-639-1: en
@@ -52,6 +58,17 @@ languages:
     enabled: true
     languageId: 3
     base: /fr/
+    baseVariants:
+      - base: '/fr-DE/'
+        condition: 'market == "30"'
+      - base: '/fr-CH/'
+        condition: 'market == "31"'
+      - base: '/fr-GB/'
+        condition: 'market == "32"'
+      - base: '/fr-FR/'
+        condition: 'market == "33"'
+      - base: '/fr-LU/'
+        condition: 'market == "34"'
     typo3Language: fr
     locale: fr_FR.UTF-8
     iso-639-1: fr

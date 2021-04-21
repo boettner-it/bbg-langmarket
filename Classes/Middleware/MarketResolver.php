@@ -18,7 +18,7 @@ class MarketResolver implements MiddlewareInterface
 	{
 		/** @var SiteLanguage $language */
 		$language    = $request->getAttribute('language');
-		$pathSegments = explode('/', $language->getBase()->getPath());
+		$pathSegments = explode('/', $request->getAttribute('routing')->getUri()->getPath());
 
 		switch ($pathSegments[1]) {
 			case 'de-DE':
@@ -41,9 +41,51 @@ class MarketResolver implements MiddlewareInterface
 				$resolvedMarket = 14;
 				break;
 
+			case 'en-DE':
+				$resolvedMarket = 20;
+				break;
+
+			case 'en-CH':
+				$resolvedMarket = 21;
+				break;
+
+			case 'en-GB':
+				$resolvedMarket = 22;
+				break;
+
+			case 'en-FR':
+				$resolvedMarket = 23;
+				break;
+
+			case 'en-LU':
+				$resolvedMarket = 24;
+				break;
+
+			case 'fr-DE':
+				$resolvedMarket = 30;
+				break;
+
+			case 'fr-CH':
+				$resolvedMarket = 31;
+				break;
+
+			case 'fr-GB':
+				$resolvedMarket = 32;
+				break;
+
+			case 'fr-FR':
+				$resolvedMarket = 33;
+				break;
+
+			case 'fr-LU':
+				$resolvedMarket = 34;
+				break;
+
 			default:
-				return new RedirectResponse('/de-DE');
+				$resolvedMarket = 10;
+//				return new RedirectResponse('/de-DE');
 		}
+
 		$queryParams       = $request->getQueryParams();
 		$queryParams['LM'] = $resolvedMarket;
 		$request           = $request->withQueryParams($queryParams);
