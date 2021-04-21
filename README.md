@@ -19,7 +19,7 @@ The extension resolves the parameters www.mysite.com/en-EN into two URL GET parm
 Comparable use cases may be covered similarly.
 
 ## WARNING:
-There´s currently an issue with FE link generation. All known ways like shown below don´t resolve to the correct URL. I am still working on a solution on this while any inpout is welcome.
+There´s currently an issue with FE link generation. All known ways like shown below don´t resolve to the correct URL. I am still working on a solution on this while any input is welcome.
 ````
 $cObj->getTypoLink_URL();
 $site->getRouter()->generateUri();
