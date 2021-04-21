@@ -17,3 +17,11 @@ Configuration/Routing/config.yaml holds an example Site configuration.
 The extension resolves the parameters www.mysite.com/en-EN into two URL GET parmeters L (language) and LM (market or country) with en holding the standard TYPO3 L parameters sys_language_uid and EN the market parameter value. It is named LM here for historical reasons in the scope of the project this was set up for. 
 
 Comparable use cases may be covered similarly.
+
+## WARNING:
+There´s currently an issue with FE link generation. All known ways like shown below don´t resolve to the correct URL. I am still working on a solution on this while any inpout is welcome.
+````
+$cObj->getTypoLink_URL();
+$site->getRouter()->generateUri();
+$uri = $uriBuilder->reset()->setArguments($arguments)->setTargetPageUid(1);
+````
